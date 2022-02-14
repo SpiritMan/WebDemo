@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+}
+
+.wrapper>div {
+    flex: 1;
+}
+
+.grid {
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    grid-gap: 10px;
+}
+
+.grid>div {
+    border-radius: 4px;
+    background-color: #ff9900;
+    text-align: center;
+}
+
+.box {
+    float: left;
+    width: 150px;
+    height: 150px;
+    margin-left: 12px;
+    margin-top: 2px;
+    background-color: #ff9900;
+    margin-right: 30px;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;
+}
+
+p {
+    background-color: rgb(207, 232, 220);
+    border: 2px solid rgb(79, 185, 227);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.positioned {
+    position: relative;
+    top: 30px;
+    left: 30px;
+}
