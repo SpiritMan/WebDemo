@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>IndexedDB demo</title>
+</head>
+
+<body>
+    <header>
+        <h1>IndexedDB notes demo</h1>
+    </header>
+
+    <main>
+        <section class="note-display">
+            <h2>Notes</h2>
+            <ul></ul>
+        </section>
+        <section class="new-note">
+            <h2>Enter a new note</h2>
+            <form>
+                <div>
+                    <label for="title">Note title</label>
+                    <input type="text" id="title" required>
+                </div>
+                <div>
+                    <label for="body">Note text</label>
+                    <input type="text" id="body" required>
+                </div>
+                <div>
+                    <button>Create new note</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copy nobody. Use the code as you like.</p>
+    </footer>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
