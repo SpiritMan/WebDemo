@@ -8,7 +8,7 @@ console.log('width:' + width + ' height:' + height);
 
 let balls = [];
 
-while (balls.length < 35) {
+while (balls.length < 100) {
     let size = random(10, 20);
     let ball = new Ball(random(0 + size, width - size),
         random(0 + size, height - size),
@@ -167,7 +167,7 @@ function Ball(x, y, velX, velY, color, size, exists) {
 
     Ball.prototype.collisionDetect = function() {
         for (let j = 0; j < balls.length; j++) {
-            if (this !== balls[j]) {
+            if (this !== balls[j] && this.exists && balls[j].exists) {
                 const dx = this.x - balls[j].x;
                 const dy = this.y - balls[j].y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
